@@ -1,0 +1,102 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+temp*
+Temp/
+Result/
+results/
+temp.txt
+
+# Uploaded / runtime files
+uploads/
+static/uploads/
+
+# FFmpeg builds (if you don't want to check the full build into git)
+# If you intentionally include ffmpeg binary in repo, remove this line
+#ffmpeg-*/
+
+# Python testing / coverage
+htmlcov/
+.coverage
+.tox/
+.nox/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model files and heavy runtimes (most ONNX/PyTorch models are large)
+# IMPORTANT: All large model files (ONNX, .pt, .pth, etc.) have been removed from this repository.
+# They are intentionally ignored so the git history and clones remain small.
+# Download models from the Google Drive link listed in README.md and place them into one of the
+# local folders below (examples used by the project): `checkpoints/` or `wav2lip_onnx_models/`.
+# Keep this ignore in place unless you decide to track models using Git LFS or an external host.
+*.onnx
+*.onnx.zip
+*.pt
+*.pth
+
+# Specific folders with models (explicit) - keep ignored
+/checkpoints/*.onnx
+/wav2lip_onnx_models/*.onnx
+/xseg/*.onnx
+/blendmasker/*.onnx
+/faceID/*.onnx
+/enhancers/**/models/*.onnx
+
+# If you are using tools that put downloaded models in a 'models' folder
+models/
+
+# If you want to track the models with Git LFS instead of ignoring, remove the *.onnx rules above
+# and use Git LFS to track the exact file(s):
+#   git lfs install
+#   git lfs track "*.onnx"
+# commit the generated .gitattributes and then add the model files.
+
+# Keep placeholder txt files and README markers (these are useful):
+!**/place *_onnx model here.txt
+!**/place *onnx model here.txt
+
+# Note: models were removed from this repo and are available on the project Google Drive.
+# See `README.md` for the Drive link and instructions to download and place model files.
+
+# Node / JS
+node_modules/
+
+# Secrets and config
+.env
+.env.*
+
+# Keep this file in repo. Add / remove patterns based on your workflow.
+ffmpeg-2025-05-26-git-43a69886b2-full_build/

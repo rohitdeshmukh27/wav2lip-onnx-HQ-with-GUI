@@ -1,0 +1,37 @@
+python -W ignore inference_onnxModel_V2.py --checkpoint_path "checkpoints\wav2lip_256.onnx" --face "D:\study\fy project\wav2lip-onnx-HQ-main\Example\test.mp4" --audio "D:\study\fy project\wav2lip-onnx-HQ-main\Example\test.WAV" --outfile "D:\output.mp4" --nosmooth --pads 0 10 0 0 --fps 29.97
+
+
+
+
+
+
+python -W ignore inference_onnxModel_V2.py --checkpoint_path "checkpoints\wav2lip_256.onnx" --face "D:\study\fy project\wav2lip-onnx-HQ-main\Example\test.mp4" --audio "D:\study\fy project\wav2lip-onnx-HQ-main\Example\test.WAV" --outfile "D:\output.mp4" --fps 29.97
+
+
+
+
+
+
+
+
+python -W ignore inference_onnxModel_V2.py --checkpoint_path "checkpoints\wav2lip_256.onnx" --face "D:\study\fy project\wav2lip-onnx-HQ-main\Example\test.mp4" --audio "D:\study\fy project\wav2lip-onnx-HQ-main\Example\test_converted.wav" --outfile "D:\output.mp4" --pads 10 --fps 29.97
+
+
+
+
+
+
+
+python -W ignore inference_onnxModel_V2.py --checkpoint_path "checkpoints\wav2lip_256.onnx" --face "D:\study\fy project\wav2lip-onnx-HQ-main\Example\test.mp4" --audio "D:\study\fy project\wav2lip-onnx-HQ-main\Example\test_converted.wav" --outfile "D:\study\fy project\wav2lip-onnx-HQ-main\Result\output.mp4" --pads 10 --fps 29.97
+
+
+
+
+
+
+
+python -W ignore inference_onnxModel_V2.py --checkpoint_path "checkpoints\wav2lip_256.onnx" --face "D:\study\fy project\wav2lip-onnx-HQ-main\Example\test video.mp4" --audio "D:\study\fy project\wav2lip-onnx-HQ-main\Example\test audio.WAV" --outfile "D:\study\fy project\wav2lip-onnx-HQ-main\Result\output.mp4" --pads 10 --fps 29.97
+
+
+PS D:\study\fy project\wav2lip-onnx-HQ-main> & "D:/study/fy project/wav2lip-onnx-HQ-main/venv/Scripts/python.exe" -m uvicorn web.main:app --host 0.0.0.0 --port 8000
+>> 

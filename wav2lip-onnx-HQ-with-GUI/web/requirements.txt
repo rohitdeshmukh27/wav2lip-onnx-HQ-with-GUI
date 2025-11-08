@@ -1,0 +1,4 @@
+# FastAPI for Wav2Lip ONNX Web Interface
+fastapi
+uvicorn
+python-multipart

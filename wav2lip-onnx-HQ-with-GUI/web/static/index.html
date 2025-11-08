@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhisperLip - AI-Based Lip Synchronization</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="hero-section">
+      <div class="background-effects">
+        <div class="gradient-glow"></div>
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="blur-text-word">Welcome to WhisperLip</span>
+        </h1>
+
+        <p class="hero-subtitle split-text">
+          AI-Based Lip Synchronization Tool for Multilingual Video Dubbing.
+        </p>
+
+        <button id="convert-btn" class="hero-button">Click to Convert</button>
+      </div>
+    </section>
+
+    <!-- Project Flow Section -->
+    <section id="flow-section" class="flow-section">
+      <div class="flow-container">
+        <div class="flow-header">
+          <h2 class="flow-title">How It Works</h2>
+          <p class="flow-description">
+            Transform your videos with AI-powered lip-sync in just three simple
+            steps
+          </p>
+        </div>
+
+        <div class="flow-steps">
+          <!-- Step 1 -->
+          <div class="flow-step-wrapper">
+            <div class="flow-step">
+              <div class="flow-step-glow"></div>
+              <div class="flow-step-inner">
+                <div class="flow-icon-container">
+                  <svg
+                    class="flow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"
+                    />
+                  </svg>
+                </div>
+
+                <h3 class="flow-step-title">Upload Audio + Video</h3>
+
+                <p class="flow-step-description">
+                  Select your audio and video files to get started
+                </p>
+
+                <div class="flow-step-number">1</div>
+              </div>
+            </div>
+
+            <!-- Arrow -->
+            <div class="flow-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flow-step-wrapper">
+            <div class="flow-step">
+              <div class="flow-step-glow"></div>
+              <div class="flow-step-inner">
+                <div class="flow-icon-container">
+                  <svg
+                    class="flow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+                    />
+                  </svg>
+                </div>
+
+                <h3 class="flow-step-title">Get Lip-Synced Result</h3>
+
+                <p class="flow-step-description">
+                  Download your perfectly synchronized video
+                </p>
+
+                <div class="flow-step-number">2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team-section" class="team-section">
+      <div class="team-container">
+        <div class="team-header">
+          <h2 class="team-title">Meet Our Team</h2>
+          <p class="team-description">
+            The brilliant minds behind WhisperLip's cutting-edge AI technology
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-card-inner">
+              <div class="team-card-glow"></div>
+              <div class="team-image-container">
+                <img
+                  src="https://www.vupune.ac.in/images/Faculty/dr-sujit-deshpande.jpg"
+                  alt="Dr. Sujit N Deshpande"
+                  class="team-image"
+                />
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">Dr. Sujit N Deshpande</h3>
+                <p class="team-role">Mentor</p>
+                <div class="team-decorator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-inner">
+              <div class="team-card-glow"></div>
+              <div class="team-image-container">
+                <img src="https://raw.githubusercontent.com/rohitdeshmukh27/whisperlip-sync-studio/refs/heads/main/public/ananya.jpeg" alt="Ananya Payas" class="team-image" />
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">Ananya Payas</h3>
+                <p class="team-role">Team Member</p>
+                <div class="team-decorator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-inner">
+              <div class="team-card-glow"></div>
+              <div class="team-image-container">
+                <img
+                  src="https://raw.githubusercontent.com/rohitdeshmukh27/whisperlip-sync-studio/refs/heads/main/public/chaitanya.jpeg"
+                  alt="Chaitanya Ambade"
+                  class="team-image"
+                />
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">Chaitanya Ambade</h3>
+                <p class="team-role">Team Member</p>
+                <div class="team-decorator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-inner">
+              <div class="team-card-glow"></div>
+              <div class="team-image-container">
+                <img
+                  src="https://raw.githubusercontent.com/rohitdeshmukh27/whisperlip-sync-studio/refs/heads/main/public/lakxhit.jpeg"
+                  alt="Lakxhit Chaurasia"
+                  class="team-image"
+                />
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">Lakxhit Chaurasia</h3>
+                <p class="team-role">Team Member</p>
+                <div class="team-decorator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-inner">
+              <div class="team-card-glow"></div>
+              <div class="team-image-container">
+                <img src="https://raw.githubusercontent.com/rohitdeshmukh27/whisperlip-sync-studio/refs/heads/main/public/rohit.jpg" alt="Rohit Deshmukh" class="team-image" />
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">Rohit Deshmukh</h3>
+                <p class="team-role">Team Lead</p>
+                <div class="team-decorator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-inner">
+              <div class="team-card-glow"></div>
+              <div class="team-image-container">
+                <img src="https://raw.githubusercontent.com/rohitdeshmukh27/whisperlip-sync-studio/refs/heads/main/public/ronit.jpeg" alt="Ronit Jain" class="team-image" />
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">Ronit Jain</h3>
+                <p class="team-role">Team Member</p>
+                <div class="team-decorator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Convert Section -->
+    <section id="convert-section" class="convert-section hidden">
+      <div class="background-effects">
+        <div class="gradient-glow"></div>
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+      </div>
+
+      <div class="convert-container">
+        <button id="back-btn" class="back-button">
+          <svg
+            class="back-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Back to Home
+        </button>
+
+        <div class="convert-header">
+          <h1 class="convert-title">Convert Your Media</h1>
+          <p class="convert-description">
+            Upload your audio and video files, avoid having multi face.
+          </p>
+        </div>
+
+        <!-- Upload Form -->
+        <div id="upload-form-section" class="upload-section">
+          <form id="upload-form" class="upload-grid">
+            <div class="upload-card">
+              <div class="upload-card-inner">
+                <svg
+                  class="upload-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"
+                  />
+                </svg>
+                <h3 class="upload-title">Select Audio</h3>
+                <input
+                  type="file"
+                  id="audio"
+                  name="audio"
+                  accept="audio/*"
+                  required
+                  class="file-input"
+                />
+                <label for="audio" class="file-label">
+                  <span id="audio-filename">Choose File</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="upload-card">
+              <div class="upload-card-inner">
+                <svg
+                  class="upload-icon play-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
+                <h3 class="upload-title">Select Video</h3>
+                <input
+                  type="file"
+                  id="video"
+                  name="video"
+                  accept="video/*"
+                  required
+                  class="file-input"
+                />
+                <label for="video" class="file-label">
+                  <span id="video-filename">Choose File</span>
+                </label>
+              </div>
+            </div>
+          </form>
+
+          <div class="generate-section">
+            <button
+              type="submit"
+              id="generate-btn"
+              class="generate-button"
+              disabled
+            >
+              Generate Lip-Sync
+            </button>
+          </div>
+        </div>
+
+        <!-- Loading Section -->
+        <div id="loading-section" class="loading-section hidden">
+          <h2 class="loading-title">Processing Your Request...</h2>
+          <div class="loading-image-container">
+            <img
+              src="https://cdn-fikdj.nitrocdn.com/BeQKQJEEMTzFulppeCBPmpmURlzfZAZR/assets/images/optimized/rev-b1a63b5/www.insideoutgroup.co.uk/wp-content/uploads/2018/02/Rackspace_Office_Time_Lapse.gif"
+              alt="Processing..."
+              class="loading-image"
+            />
+          </div>
+          <p class="loading-description">
+            Our AI models are working their magic. This will take a few
+            moments...
+          </p>
+        </div>
+
+        <!-- Result Section -->
+        <div id="output-section" class="result-section hidden">
+          <h2 class="result-title">Your Result is Ready!</h2>
+          <div class="result-video-container">
+            <video id="output-video" controls class="result-video"></video>
+          </div>
+          <div class="result-actions">
+            <a id="download-btn" class="download-button" download="output.mp4">
+              Download Result
+            </a>
+            <button id="new-conversion-btn" class="new-conversion-button">
+              Start New Conversion
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
